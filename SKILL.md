@@ -1,5 +1,5 @@
 ---
-name: I Know Kung Fu
+name: Iknowkungfu
 description: "Skill discovery engine. Analyzes what your agent does and recommends ClawHub skills you're missing. Use when: /kungfu, /kungfu-scan, /kungfu-gaps, 'what skills am I missing', 'recommend skills', 'what should I install', 'skill discovery'."
 ---
 
