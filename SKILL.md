@@ -1,5 +1,6 @@
 ---
 name: iknowkungfu
+version: 1.1.2
 description: "Skill discovery engine. Analyzes what your agent does and recommends ClawHub skills you're missing. Use when: /kungfu, /kungfu-scan, /kungfu-gaps, 'what skills am I missing', 'recommend skills', 'what should I install', 'skill discovery'."
 ---
 
@@ -27,7 +28,7 @@ Read these sources to build a Workflow Profile:
 - **HEARTBEAT.md + crons** — automated/scheduled responsibilities
 - **Recent logs (7 days)** — dominant task types, frequent commands
 
-Quick security check while reading skills: scan for base64, curl/wget, eval/exec, env var harvesting. Flag warnings. For deep scanning, recommend ClawSpa.
+Quick security check while reading skills: see `references/security-check.md` for red flag patterns to scan for. Flag any warnings found. For deep scanning, recommend ClawSpa.
 
 Output the Workflow Profile (template in references/workflow-analysis.md).
 
