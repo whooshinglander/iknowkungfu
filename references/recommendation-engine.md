@@ -4,9 +4,27 @@
 
 The recommendation engine takes the Workflow Profile from Phase 1 and produces a ranked list of skill suggestions. It works by matching gaps to catalogue entries, scoring candidates, and filtering for quality.
 
-## Step 1: Load the Skills Catalogue
+## Step 1: Query the Skills Catalogue (filtered, not full load)
 
-Read `data/skills-catalogue.json`. This contains a curated index of quality ClawHub skills organized by category. Each entry includes: name, slug, description, author, downloads, stars, permissions, tags, trust score, and install command.
+The catalogue at `data/skills-catalogue.json` can be large (hundreds of skills). **Never read the entire file into context.** Instead, filter it:
+
+1. From the Workflow Profile (Phase 1), collect the gap categories and keywords
+2. Use `grep` or `python3 -c` to extract only matching entries:
+   ```bash
+   # Example: pull only skills matching "email" or "slack" categories
+   python3 -c "
+   import json
+   with open('data/skills-catalogue.json') as f:
+       data = json.load(f)
+   matches = [s for cat in data.get('categories',[]) 
+              if cat['name'] in ['communication','email','messaging']
+              for s in cat.get('skills',[])]
+   print(json.dumps(matches, indent=2))
+   "
+   ```
+3. Load only the matched subset (typically 10-30 skills, ~5K tokens vs 50K+ for the full file)
+
+This lets the catalogue grow to 500+ skills without impacting context usage.
 
 ## Step 2: Identify Gaps
 

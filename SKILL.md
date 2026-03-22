@@ -35,7 +35,7 @@ Output the Workflow Profile (template in references/workflow-analysis.md).
 
 See `references/recommendation-engine.md` for full procedure.
 
-Load `data/skills-catalogue.json`. For each gap in the profile:
+Filter `data/skills-catalogue.json` by gap categories (never load full file). For each gap:
 1. Find matching skills by category
 2. Score candidates (see `references/scoring.md`)
 3. Filter already-installed skills (check ALL install paths: user, system, workspace)
