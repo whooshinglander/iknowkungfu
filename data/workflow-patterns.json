@@ -53,7 +53,7 @@
       "keywords": ["automate", "cron", "schedule", "scrape", "webhook", "trigger", "workflow", "bot", "recurring", "batch", "browser automation", "headless"],
       "tools": ["n8n", "zapier", "make", "ifttt", "puppeteer", "playwright"],
       "file_patterns": [],
-      "skill_indicators": ["agent-browser", "airtable-automation"]
+      "skill_indicators": ["browser-fu", "agent-browser", "airtable-automation"]
     },
     "security": {
       "keywords": ["password", "credential", "encrypt", "vault", "audit", "vulnerability", "backup", "2FA", "SSH", "key", "secret", "scan", "malicious", "injection"],
