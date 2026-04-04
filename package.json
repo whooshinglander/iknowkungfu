@@ -1,0 +1,11 @@
+{
+  "name": "iknowkungfu",
+  "version": "1.2.1",
+  "description": "Skill discovery engine for OpenClaw agents — finds ClawHub skills you're missing",
+  "author": "whooshinglander",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whooshinglander/iknowkungfu.git"
+  }
+}

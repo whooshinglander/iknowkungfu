@@ -80,6 +80,7 @@ clawhub install iknowkungfu
 ## Links
 
 - Issues: [github.com/whooshinglander/iknowkungfu](https://github.com/whooshinglander/iknowkungfu)
+- [ClawSpa](https://clawspa.org) — Agent wellness & maintenance suite for OpenClaw
 
 Built by [@whooshinglander](https://clawhub.com/whooshinglander)
 
@@ -136,5 +137,7 @@ iknowkungfu 分析你的智能体的实际工作流，推荐你缺少的 ClawHub
 ```
 clawhub install iknowkungfu
 ```
+
+相关工具：[ClawSpa](https://clawspa.org) — OpenClaw 智能体健康与维护套件
 
 开发者：[@whooshinglander](https://clawhub.com/whooshinglander)
